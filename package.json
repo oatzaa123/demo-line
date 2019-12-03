@@ -29,4 +29,8 @@
     "url": "https://github.com/benzintel/demo-line/issues"
   },
   "homepage": "https://github.com/benzintel/demo-line#readme"
+},
+  "engines": {
+  "node": "8.11.x"
+}
 }
