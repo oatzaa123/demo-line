@@ -31,6 +31,6 @@
   "homepage": "https://github.com/benzintel/demo-line#readme"
 },
   "engines": {
-  "node": "8.11.x"
+  "node": "10.16.1"
 }
 }
