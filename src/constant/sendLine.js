@@ -3,7 +3,7 @@ const request = require('request');
 class sendLine {
 
   replyLine(reply_token, msgArray) {
-      let token = process.env.LINE_TOKEN_CHANNEL || "SYvxcKZpk0KkZJjiecJeO2Rsv/JXQk2tXxTYEr/FM+sy92kre+GfEkDPVvMMJy2uF8b/kxXcmHoTIx7bsJuo4+oLarFGBKmyhF6aHmW1B5mpeF1hfCwPcOlXUVPIHu50Bg+wYMYQSreH7nFd2CapZwdB04t89/1O/w1cDnyilFU=";
+      let token = process.env.LINE_TOKEN_CHANNEL || "viahgF0U1r8cCxs6JmmQeClrBHE3Sng0L2eDKKGhIV5vv/i+Vl+Up9eooWqor+ABRue6wumafsXliuy7VRjo9trjdcPmFLcLggrp3A2SOBm4L1asIjUTVtJaiR9dCcL6pkF6nsZQBJRI90N6aZdXigdB04t89/1O/w1cDnyilFU=";
       let headers = {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer ' + token
@@ -17,7 +17,7 @@ class sendLine {
       console.log(body);
 
       request.post({
-          url: 'https://api.line.me/v2/bot/message/reply',
+          url: 'https://api.line.me/v2/bot/message',
           headers: headers,
           body: body
       }, (err, res, body) => {
