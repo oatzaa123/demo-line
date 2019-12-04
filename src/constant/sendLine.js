@@ -17,7 +17,7 @@ class sendLine {
       console.log(body);
 
       request.post({
-          url: 'https://api.line.me/v2/bot/message/',
+          url: 'https://api.line.me/v2/bot/message',
           headers: headers,
           body: body
       }, (err, res, body) => {
