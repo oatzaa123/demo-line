@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 app.post('/webhook',async (req, res) => {
   let reply_token = req.body.events[0].replyToken;
-  let msg = req.body.events[0].message.text;
+  let msg = req.body.events[0].message;
   let body = [];
 
   if (msg == "news") {
