@@ -62,24 +62,24 @@ app.post('/webhook', async (req, res) => {
 
 app.get('/', async (req, res) => {
 
-  getTodayTopPick
-  const dataTodayTopPicks = await serviceTNS.getTodayTopPick();
+  // getTodayTopPick
+  // const dataTodayTopPicks = await serviceTNS.getTodayTopPick();
 
-  res.send(dataTodayTopPicks);
+  // res.send(dataTodayTopPicks);
 
-  const getDailyTradeCode = await serviceTNS.getDailyTradeCode();
+  // const getDailyTradeCode = await serviceTNS.getDailyTradeCode();
 
-  res.send(getDailyTradeCode);
+  // res.send(getDailyTradeCode);
 
-  DW
-  const a = await serviceTNS.dw();
-  res.send(a);
+  // DW
+  // const a = await serviceTNS.dw();
+  // res.send(a);
 
-  todayStrategy
-  const a = await serviceTNS.todayStrategy();
-  res.send(a);
+  // todayStrategy
+  // const a = await serviceTNS.todayStrategy();
+  // res.send(a);
 
-  Number HighLight
+  // Number HighLight
   const a = await serviceTNS.numberHighlight();
   res.send(a);
 });
